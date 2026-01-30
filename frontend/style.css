@@ -1,0 +1,84 @@
+ { box-sizing: border-box; font-family: "Segoe UI", sans-serif; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #fde2e4,   /* light pink */
+    #e9d5ff,   /* light purple */
+    #dbeafe,   /* soft blue */
+    #fef9c3    /* soft yellow */
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-box {
+  width: 90%;
+  max-width: 1100px;
+  padding: 60px;
+  border-radius: 45px;
+  background: linear-gradient(
+    135deg,
+    #fbcfe8,
+    #e9d5ff,
+    #bfdbfe
+  );
+  box-shadow: 0 40px 120px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+  min-height: 600px;
+  background: white;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.12);
+}
+
+input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 2px solid #dbeafe;
+}
+
+.pill {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 2px solid #dbeafe;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* ✅ click-scale ONLY */
+.pill:active {
+  transform: scale(0.96);
+}
+
+.pill.active {
+  background: linear-gradient(135deg,#f472b6,#60a5fa);
+  color: white;
+}
+
+.check-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(135deg,#f472b6,#60a5fa);
+  cursor: pointer;
+}
+
+.check-btn:active {
+  transform: scale(0.97);
+}
