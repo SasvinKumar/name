@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Symptom Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-glow"></div>
+
+<div class="outer-box">
+  <div class="card">
+
+    <h1 class="title">🩺 AI Symptom Checker</h1>
+    <p class="subtitle">Educational tool only. Always consult a doctor.</p>
+
+    <h3>Enter Symptoms</h3>
+    <input id="symptoms" placeholder="e.g., fever, cough, headache" />
+
+    <h3>Gender</h3>
+    <div class="pill-row">
+      <button class="pill" onclick="selectGender(this,'Male')">👨 Male</button>
+      <button class="pill" onclick="selectGender(this,'Female')">👩 Female</button>
+      <button class="pill" onclick="selectGender(this,'Other')">🤍 Other</button>
+    </div> 
+    <p id="genderText" class="selected-text"></p>
+
+    <h3>Age Group</h3>
+    <div class="pill-grid">
+      <button class="pill" onclick="selectAge(this,'1–5')">👶 1–5</button>
+      <button class="pill" onclick="selectAge(this,'6–12')">🧒 6–12</button>
+      <button class="pill" onclick="selectAge(this,'13–21')">🎓 13–21</button>
+      <button class="pill" onclick="selectAge(this,'22–35')">💼 22–35</button>
+      <button class="pill" onclick="selectAge(this,'36–55')">👨‍👩‍👧 36–55</button>
+      <button class="pill" onclick="selectAge(this,'56–70')">👴 56–70</button>
+      <button class="pill" onclick="selectAge(this,'70+')">🧓 70+</button>
+    </div>
+    <p id="ageText" class="selected-text"></p>
+
+    <button class="check-btn" onclick="analyze()">Check Symptoms</button>
+
+    <div id="result"></div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
